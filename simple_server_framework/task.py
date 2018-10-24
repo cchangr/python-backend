@@ -61,7 +61,8 @@ def header_from_dict(headers):
     返回如下 str
     'Content-Type: text/html\r\nContent-Length: 127\r\n'
     '''
-    pass
+    result_list = ['{key}: {value}\r\n'.format(key=k, value = v) for k, v in headers.items()]
+    return ''.join(result_list)
 
 
 
