@@ -25,4 +25,37 @@ def load(path):
 
 # Model is the base clas to store data
 class Model(object):
-    pass
+
+    @classmethod
+    def db_path(cls):
+        classname = cls.__name__
+        path = 'db/{}.text'.format(classname)
+        return path
+
+    @classmethod
+    def new(cls, form):
+        m = cls(form)
+        return m
+
+    @classmethod
+    def all(cls):
+        path = cls.db_path()
+        models = load(path)
+        ms = [cls.new(m) for m in models]
+
+    def save(self):
+        """
+        save all instance in models
+        """
+        models = self.all()
+        log('models', models)
+        models.append(self)
+        l = [m.__dict__ for m in models]
+        path = self.db_path()
+        save(l, path)
+
+    def __repr__(self):
+        classname = self.__class__.__name__
+        properties = ['{}: ({})'.format(k, v) for k, v in self.__dict__.items()]
+        s = '\n'.join(properties)
+        return '< {}\n{}>\n'.format(classname, s)
