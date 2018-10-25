@@ -6,3 +6,4 @@ def route_static():
 
 def route_dict():
     pass
+
