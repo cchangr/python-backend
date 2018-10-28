@@ -1,5 +1,5 @@
 import socket
-import urllib
+import urllib.parse
 
 from server1.utils import log
 
@@ -20,10 +20,11 @@ class Request(object):
         username=g+u%26a%3F&password=
         username=g u&a?&password=
         """
-        args = self.body.split('&')
-        args = urllib.parse.unquote(args)
+        args1 = self.body.split('&')
+        for args in args1:
+            args = urllib.parse.unquote(args)
         f = {}
-        for arg in args:
+        for arg in args1:
             k, v = arg.split('=')
             f[k] = v
         return f
@@ -61,7 +62,7 @@ def response_for_path(path):
     request.query = query
 
     r = {
-        '/static': route_static
+        '/static': route_static,
     }
 
     r.update(route_dict)
@@ -103,6 +104,6 @@ def run(host, port):
 if __name__ == '__main__':
     config = dict(
         host='',
-        port=3000,
+        port=300,
     )
     run(**config)
