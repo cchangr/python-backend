@@ -50,14 +50,37 @@ class Model(object):
 
     @classmethod
     def find_all(cls, **kwargs):
-        pass
+        res = []
+        k, v = '', ''
+        for key, value in kwargs:
+            k, v = key, value
+        all = cls.all()
+        for m in all:
+            if v == m.__dict__[k]:
+                res.append(m)
+        return res
 
 
     def save(self):
         models = self.all()
         log('models', models)
-        models.append(self)
-        # __dict__ 是包含了对象所有属性和值的字典
+        first_index = 0
+        if self.__dict__.get('id') is None:
+            if len(models) > 3:
+                log('用 log 可以查看代码执行的走向')
+                self.id = models[-1].id + 1
+            else:
+                log('first index', first_index)
+                self.id = first_index
+            models.append(self)
+        else:
+            index = -1
+            for i, m in enumerate(models):
+                if m.id == self.id:
+                    index = i
+                    break
+            if index > -1:
+                models[index] = self
         l = [m.__dict__ for m in models]
         path = self.db_path()
         save(l, path)
