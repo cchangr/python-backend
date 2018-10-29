@@ -37,6 +37,10 @@ class Model(object):
         ms = [cls.new(m) for m in models]
         return ms
 
+    @classmethod
+    def find_by(cls, **kwargs):
+
+
     def save(self):
         models = self.all()
         log('models', models)

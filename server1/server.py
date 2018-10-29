@@ -1,10 +1,10 @@
 import socket
 import urllib.parse
 
-from utils import log
+from server1.utils import log
 
-from routes import route_static
-from routes import route_dict
+from server1.routes import route_static
+from server1.routes import route_dict
 
 
 class Request(object):
@@ -13,6 +13,7 @@ class Request(object):
         self.path = ''
         self.query = {}
         self.body = ''
+        self.headers = {}
 
     def form(self):
         # username=g+u%26a%3F&password=
@@ -20,9 +21,21 @@ class Request(object):
         args = body.split('&')
         f = {}
         for arg in args:
-            k, v = arg.split('=')
+            k, v = arg.split("=")
             f[k] = v
         return f
+
+    def add_headers(self, header):
+        lines = header
+        for line in lines:
+            k, v = line.split(":", 1)
+            self.headers[k] = v
+        # delete cookies
+        self.cookies = {}
+        self.add_cookies()
+
+    def add_cookies(self):
+        pass
 
 
 request = Request()
@@ -92,6 +105,7 @@ def run(host='', port=3000):
             # 设置 request 的 method
             request.method = r.split()[0]
             # 把 body 放入 request 中
+            request.add_headers(r.split('\r\n\r\n', 1)[0].split('\r\n')[1:])
             request.body = r.split('\r\n\r\n', 1)[1]
             # 用 response_for_path 函数来得到 path 对应的响应内容
             response = response_for_path(path)
