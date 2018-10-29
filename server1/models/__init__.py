@@ -39,6 +39,18 @@ class Model(object):
 
     @classmethod
     def find_by(cls, **kwargs):
+        k, v = '', ''
+        for key, value in kwargs.items():
+            k, v = key, value
+        all = cls.all()
+        for m in all:
+            if v == m.__dict__[k]:
+                return m
+            return None
+
+    @classmethod
+    def find_all(cls, **kwargs):
+        pass
 
 
     def save(self):
