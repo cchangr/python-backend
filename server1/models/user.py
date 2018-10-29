@@ -7,7 +7,11 @@ class User(Model):
         self.password = form.get('password', '')
 
     def validate_login(self):
-        return self.username == 'gua' and self.password == '123'
+        users = User.all()
+        for user in users:
+            if user.username == self.username and user.password == self.password:
+                return True
+        return False
 
     def validate_register(self):
         return len(self.username) > 2 and len(self.password) > 2

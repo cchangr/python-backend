@@ -21,7 +21,7 @@ def route_login(request):
     if request.method == 'POST':
         form = request.form()
         u = User.new(form)
-        if u.validate_login():
+        if u.validate_login:
             result = '登录成功'
         else:
             result = '用户名或者密码错误'
