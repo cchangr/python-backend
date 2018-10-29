@@ -35,7 +35,14 @@ class Request(object):
         self.add_cookies()
 
     def add_cookies(self):
-        pass
+        cookies = self.headers.get('Cookie', '')
+        kvs = cookies.split('; ')
+        log('cookie', kvs)
+        for kv in kvs:
+            if '=' in kv:
+                k, v = kv.split('=')
+                self.cookies[k] = v
+
 
 
 request = Request()

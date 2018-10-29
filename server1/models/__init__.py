@@ -60,7 +60,6 @@ class Model(object):
                 res.append(m)
         return res
 
-
     def save(self):
         models = self.all()
         log('models', models)
