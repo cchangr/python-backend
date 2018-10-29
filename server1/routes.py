@@ -1,6 +1,6 @@
-from utils import log
-from models.message import Message
-from models.user import User
+from server1.utils import log
+from server1.models.message import Message
+from server1.models.user import User
 
 
 def template(name):
@@ -10,9 +10,6 @@ def template(name):
 
 
 def route_index(request):
-    """
-    主页的处理函数, 返回主页的响应
-    """
     header = 'HTTP/1.1 210 VERY OK\r\nContent-Type: text/html\r\n'
     body = template('index.html')
     r = header + '\r\n' + body

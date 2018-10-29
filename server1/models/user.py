@@ -1,4 +1,4 @@
-from models import Model
+from server1.models import Model
 
 
 class User(Model):
@@ -11,4 +11,3 @@ class User(Model):
 
     def validate_register(self):
         return len(self.username) > 2 and len(self.password) > 2
-
