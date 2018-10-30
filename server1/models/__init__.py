@@ -65,7 +65,7 @@ class Model(object):
         log('models', models)
         first_index = 0
         if self.__dict__.get('id') is None:
-            if len(models) > 3:
+            if len(models) > 0:
                 log('用 log 可以查看代码执行的走向')
                 self.id = models[-1].id + 1
             else:

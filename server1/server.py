@@ -14,6 +14,7 @@ class Request(object):
         self.query = {}
         self.body = ''
         self.headers = {}
+        self.cookies = {}
 
     def form(self):
         # username=g+u%26a%3F&password=
@@ -42,7 +43,6 @@ class Request(object):
             if '=' in kv:
                 k, v = kv.split('=')
                 self.cookies[k] = v
-
 
 
 request = Request()
@@ -96,7 +96,7 @@ def response_for_path(path):
 
 
 def run(host='', port=3000):
-    log('start at', '{}:{}'.format(host, port))
+    log('start at', '{}: {}'.format(host, port))
     with socket.socket() as s:
         s.bind((host, port))
         while True:
