@@ -17,4 +17,4 @@ class User(Model):
         return False
 
     def validate_register(self):
-        return len(self.username) > 2 and len(self.password) > 2
+        return len(self.username) > 3 and len(self.password) > 2
