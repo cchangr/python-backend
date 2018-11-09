@@ -4,6 +4,10 @@ import urllib.parse
 # a class to save the request information
 from todolist_2.utils import log
 
+from todolist_2.routes_static import route_dict
+from todolist_2.routers_simpletodo import route_dict as simpletodo_routes
+from todolist_2.routers_user import route_dict as user_routes
+
 
 class Request(object):
     def __init__(self):
@@ -89,14 +93,15 @@ def response_for_path(path):
         '/static': route_dict
     }
 
-    r.update(todo_route)
+    r.update(simpletodo_routes)
+    r.update(user_routes)
     response = r.get(path, error)
     return response(request)
 
 
 # main program
 def run(host, port):
-    log('start at', '{}:{}'.format((host, port)))
+    log('start at', '{}:{}'.format(host, port))
     with socket.socket() as s:
         s.bind((host, port))
 
@@ -120,7 +125,7 @@ def run(host, port):
 
 if __name__ == '__main__':
     config = dict(
-        host='',
-        port=3000,
+        host = '',
+        port = 5000,
     )
     run(**config)

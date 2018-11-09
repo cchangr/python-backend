@@ -1,5 +1,4 @@
 from todolist_2.utils import log
-from todolist_2.models import Message
 from todolist_2.models import User
 
 import random
@@ -127,8 +126,23 @@ def route_static(request):
         return img
 
 
+def route_profile(request):
+    header = 'HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n'
+    body = template('profile.html')
+    session_id = request.cookies.get('user', '')
+    user_id = session.get(session_id, -1)
+
+    if user_id != -1:
+        user = User.find_by(id=int(user_id))
+    body = body.replace('{{user}}', str(user))
+    r = header + '\r\n' + body
+    return r.encode(encoding='utf-8')
+
+
+
 route_dict = {
     '/': route_index,
     '/login': route_login,
     '/register': route_register,
+    '/profile': route_profile
 }
