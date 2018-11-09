@@ -1,5 +1,6 @@
 import json
 from todolist_2.utils import log
+import time
 
 
 def save(data, path):
@@ -70,6 +71,10 @@ class Model(object):
                 data.append(m)
         return data
 
+    @classmethod
+    def find(cls, id):
+        return cls.find_by(id=id)
+
     def __repr__(self):
         classname = self.__class__.__name__
         properties = ['{}: ({})'.format(k, v) for k, v in self.__dict__.items()]
@@ -122,6 +127,7 @@ class User(Model):
             self.id = int(self.id)
         self.username = form.get('username', '')
         self.password = form.get('password', '')
+        self.role = int(form.get('role', 10))
 
     def validate_login(self):
         # return self.username == 'gua' and self.password == '123'
@@ -135,6 +141,91 @@ class User(Model):
 
     def validate_register(self):
         return len(self.username) > 2 and len(self.password) > 2
+
+    def todos(self):
+        ts = []
+        for t in Todo.all():
+            if t.user_id == self.id:
+                ts.append(t)
+        return ts
+
+
+class Todo(Model):
+    @classmethod
+    def new(cls, form, user_id=-1):
+        """
+        :param form: a dict contains Todo_data
+        :param user_id:
+        :return: todo_instance
+        """
+
+        t = cls(form, user_id)
+        t.save()
+        return t
+
+    @classmethod
+    def update(cls, form, id):
+        t = cls.find(id)
+        valid_names = [
+            'task',
+            'completed'
+        ]
+
+        for key in form:
+            if key in valid_names:
+                setattr(t, key, form[key])
+        t.updated_time = int(time.time())
+        t.save()
+
+    @classmethod
+    def complete(cls, id, completed):
+
+        t = cls.find(id)
+        t.completed = completed
+        t.save()
+        return t
+
+    def is_owner(self, id):
+        return self.user_id == id
+
+    def ct(self):
+        format = '%H:%M:%S'
+        value = time.localtime(self.created_time)
+        dt = time.strftime(format, value)
+        return dt
+
+    def __init__(self, form, user_id=-1):
+        self.id = form.get('id', None)
+        self.task = form.get('task', '')
+        self.completed = False
+        # 和别的数据关联的方式, 用 user_id 表明拥有它的 user 实例
+        self.user_id = form.get('user_id', user_id)
+        # 添加创建和修改时间
+        self.created_time = form.get('created_time', None)
+        self.updated_time = form.get('updated_time', None)
+        if self.created_time is None:
+            self.created_time = int(time.time())
+            self.updated_time = self.created_time
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 class Message(Model):
     def __init__(self, form):

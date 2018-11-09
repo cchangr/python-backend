@@ -117,25 +117,6 @@ def route_register(request):
     return r.encode(encoding='utf-8')
 
 
-def route_message(request):
-    username = current_user(request)
-    if username == '【游客】':
-        log("**debug, route msg 未登录")
-        return redirect('/')
-    log('本次请求的 method', request.method)
-    if request.method == 'POST':
-        form = request.form()
-        msg = Message.new(form)
-        log('post', form)
-        message_list.append(msg)
-    header = 'HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n'
-    # body = '<h1>消息版</h1>'
-    body = template('html_basic.html')
-    msgs = '<br>'.join([str(m) for m in message_list])
-    body = body.replace('{{messages}}', msgs)
-    r = header + '\r\n' + body
-    return r.encode(encoding='utf-8')
-
 
 def route_static(request):
     filename = request.query.get('file', 'doge.gif')
@@ -150,5 +131,4 @@ route_dict = {
     '/': route_index,
     '/login': route_login,
     '/register': route_register,
-    '/messages': route_message,
 }
