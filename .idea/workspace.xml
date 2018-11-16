@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed189f7b-fc19-4048-9d2c-d117b151f3c1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/todolist_3/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/todolist_3/routes/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/todolist_3/server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/todolist_3/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todolist_3/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/todolist_3/server.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +23,7 @@
     <session id="-2076834581">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="28" />
+          <entry key="project.closed" value="29" />
           <entry key="project.open.time.0" value="12" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="5" />
@@ -61,7 +58,7 @@
           <entry key="dummy" value="7" />
           <entry key="html" value="637" />
           <entry key="md" value="141" />
-          <entry key="py" value="17481" />
+          <entry key="py" value="17781" />
           <entry key="txt" value="283" />
         </counts>
       </usages-collector>
@@ -70,7 +67,7 @@
           <entry key="HTML" value="637" />
           <entry key="Markdown" value="141" />
           <entry key="PLAIN_TEXT" value="290" />
-          <entry key="Python" value="17480" />
+          <entry key="Python" value="17780" />
           <entry key="textmate" value="1" />
         </counts>
       </usages-collector>
@@ -86,15 +83,16 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/todolist_3/server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="626">
-              <caret line="67" column="4" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="4" />
+            <state relative-caret-position="379">
+              <caret line="83" column="5" lean-forward="true" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
-                <marker date="1542342463131" expanded="true" signature="107:1141" ph="..." />
-                <marker date="1542342463131" expanded="true" signature="411:650" ph="..." />
-                <marker date="1542342463131" expanded="true" signature="680:831" ph="..." />
-                <marker date="1542342463131" expanded="true" signature="1173:1642" ph="..." />
-                <marker date="1542342463131" expanded="true" signature="1670:1976" ph="..." />
+                <marker date="1542342975183" expanded="true" signature="107:1141" ph="..." />
+                <marker date="1542342975183" expanded="true" signature="411:650" ph="..." />
+                <marker date="1542342975183" expanded="true" signature="680:831" ph="..." />
+                <marker date="1542342975183" expanded="true" signature="1163:1616" ph="..." />
+                <marker date="1542342975183" expanded="true" signature="2083:2767" ph="..." />
+                <marker date="1542342975183" expanded="true" signature="2795:3101" ph="..." />
               </folding>
             </state>
           </provider>
@@ -716,7 +714,7 @@
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49773243" visible="true" weight="0.15495208" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49773243" visible="true" weight="0.15495208" />
       <window_info id="Structure" order="1" sideWeight="0.5022676" side_tool="true" weight="0.114379086" />
       <window_info id="Favorites" order="2" sideWeight="0.5022676" side_tool="true" weight="0.114379086" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1098,15 +1096,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/todolist_3/server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="626">
-          <caret line="67" column="4" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="4" />
+        <state relative-caret-position="379">
+          <caret line="83" column="5" lean-forward="true" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1542342463131" expanded="true" signature="107:1141" ph="..." />
-            <marker date="1542342463131" expanded="true" signature="411:650" ph="..." />
-            <marker date="1542342463131" expanded="true" signature="680:831" ph="..." />
-            <marker date="1542342463131" expanded="true" signature="1173:1642" ph="..." />
-            <marker date="1542342463131" expanded="true" signature="1670:1976" ph="..." />
+            <marker date="1542342975183" expanded="true" signature="107:1141" ph="..." />
+            <marker date="1542342975183" expanded="true" signature="411:650" ph="..." />
+            <marker date="1542342975183" expanded="true" signature="680:831" ph="..." />
+            <marker date="1542342975183" expanded="true" signature="1163:1616" ph="..." />
+            <marker date="1542342975183" expanded="true" signature="2083:2767" ph="..." />
+            <marker date="1542342975183" expanded="true" signature="2795:3101" ph="..." />
           </folding>
         </state>
       </provider>

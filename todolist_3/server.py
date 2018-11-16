@@ -49,13 +49,56 @@ class Request(object):
                 self.cookies[k] = v
 
 
+def error(request, code=404):
+    """
+    according code return response
+    """
+    e = {
+        404: b'HTTP/1.1 404 NOT FOUND\r\n\r\n<h1>NOT FOUND</h1>',
+    }
+    return e.get(code, b'')
+
+
 def parsed_path(path):
-    pass
+    """
+    example.com?message=hello&author=gua
+    message=hello&author=gua
+    {
+        'message': 'hello',
+        'author': 'gua',
+    }
+    """
+    index = path.find('?')
+    if index == -1:
+        return path, {}
+    else:
+        path, query_string = path.split('?', 1)
+        args = query_string.split('&')
+        query = {}
+        for arg in args:
+            k, v = arg.split('=')
+            query[k] = v
+        return path, query
+
 
 
 def response_for_path(path, request):
     path, query = parsed_path(path)
-    pass
+    request.path = path
+    request.query = query
+    log('path and query', path, query)
+    # according path to call route
+    r = {
+        '/static': route_static,
+    }
+    #
+    r.update(simpletodo_routes)
+    r.update(user_routes)
+    r.update(todo_routes)
+    r.update(weibo_routes)
+    #
+    response = r.get(path, error)
+    return response(request)
 
 
 def process_request(connection):
