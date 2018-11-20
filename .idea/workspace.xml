@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed189f7b-fc19-4048-9d2c-d117b151f3c1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/todolist_3/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/todolist_3/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todolist_3/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/todolist_3/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,12 +24,12 @@
     <session id="-2076834581">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="29" />
-          <entry key="project.open.time.0" value="12" />
+          <entry key="project.closed" value="30" />
+          <entry key="project.open.time.0" value="13" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="5" />
-          <entry key="project.open.time.4" value="11" />
-          <entry key="project.opened" value="29" />
+          <entry key="project.open.time.4" value="12" />
+          <entry key="project.opened" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -38,7 +39,7 @@
           <entry key="html" value="43" />
           <entry key="md" value="4" />
           <entry key="pstat" value="1" />
-          <entry key="py" value="137" />
+          <entry key="py" value="140" />
           <entry key="txt" value="43" />
           <entry key="xml" value="1" />
         </counts>
@@ -49,7 +50,7 @@
           <entry key="Markdown" value="4" />
           <entry key="PLAIN_TEXT" value="45" />
           <entry key="Profiler Session" value="1" />
-          <entry key="Python" value="137" />
+          <entry key="Python" value="140" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -58,7 +59,7 @@
           <entry key="dummy" value="7" />
           <entry key="html" value="637" />
           <entry key="md" value="141" />
-          <entry key="py" value="17781" />
+          <entry key="py" value="18204" />
           <entry key="txt" value="283" />
         </counts>
       </usages-collector>
@@ -67,7 +68,7 @@
           <entry key="HTML" value="637" />
           <entry key="Markdown" value="141" />
           <entry key="PLAIN_TEXT" value="290" />
-          <entry key="Python" value="17780" />
+          <entry key="Python" value="18203" />
           <entry key="textmate" value="1" />
         </counts>
       </usages-collector>
@@ -80,20 +81,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/todolist_3/server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="83" column="5" lean-forward="true" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
+            <state relative-caret-position="-604">
+              <caret line="54" column="7" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="7" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
-                <marker date="1542342975183" expanded="true" signature="107:1141" ph="..." />
-                <marker date="1542342975183" expanded="true" signature="411:650" ph="..." />
-                <marker date="1542342975183" expanded="true" signature="680:831" ph="..." />
-                <marker date="1542342975183" expanded="true" signature="1163:1616" ph="..." />
-                <marker date="1542342975183" expanded="true" signature="2083:2767" ph="..." />
-                <marker date="1542342975183" expanded="true" signature="2795:3101" ph="..." />
+                <marker date="1542343067557" expanded="true" signature="107:1334" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/todolist_3/routes/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/todolist_3/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="756">
+              <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+                <marker date="1542671344655" expanded="true" signature="131:136" ph="..." />
+                <marker date="1542671344655" expanded="true" signature="131:258" ph="..." />
+                <marker date="1542671344655" expanded="true" signature="415:420" ph="..." />
+                <marker date="1542671344655" expanded="true" signature="580:873" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/Cellar/python/3.7.1/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="276" column="40" lean-forward="true" selection-start-line="276" selection-start-column="40" selection-end-line="276" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -101,20 +127,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/todolist_3/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <marker date="1542340719722" expanded="true" signature="38:247" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.2/python_stubs/-1199943126/time.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="226" column="72" selection-start-line="226" selection-start-column="4" selection-end-line="226" selection-end-column="72" />
+            <state relative-caret-position="231">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -186,6 +200,7 @@
         <option value="$PROJECT_DIR$/todolist_2/templates/login.html" />
         <option value="$PROJECT_DIR$/todolist_3/utils.py" />
         <option value="$PROJECT_DIR$/todolist_3/server.py" />
+        <option value="$PROJECT_DIR$/todolist_3/models.py" />
       </list>
     </option>
   </component>
@@ -209,17 +224,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="python-backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python-backend" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -231,6 +235,17 @@
               <item name="python-backend" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="todolist_3" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="python-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python-backend" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -714,7 +729,7 @@
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49773243" visible="true" weight="0.15495208" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49773243" visible="true" weight="0.18104367" />
       <window_info id="Structure" order="1" sideWeight="0.5022676" side_tool="true" weight="0.114379086" />
       <window_info id="Favorites" order="2" sideWeight="0.5022676" side_tool="true" weight="0.114379086" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -807,20 +822,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server1/models/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1680">
-          <caret line="80" column="26" lean-forward="true" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server1/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server1/server.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2100">
@@ -989,9 +990,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1019,9 +1017,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="920">
           <caret line="201" column="18" selection-start-line="201" selection-start-column="18" selection-end-line="201" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1064,48 +1059,54 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <marker date="1541778810454" expanded="true" signature="207:333" ph="..." />
-            <marker date="1541778810454" expanded="true" signature="350:421" ph="..." />
-            <marker date="1541778810454" expanded="true" signature="439:605" ph="..." />
-            <marker date="1541778810454" expanded="true" signature="625:781" ph="..." />
-            <marker date="1541778810454" expanded="true" signature="801:904" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/todolist_3/models.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/todolist_3/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <marker date="1542340719722" expanded="true" signature="38:247" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.2/python_stubs/-1199943126/time.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="226" column="72" selection-start-line="226" selection-start-column="4" selection-end-line="226" selection-end-column="72" />
+        <state relative-caret-position="192">
+          <caret line="225" column="4" lean-forward="true" selection-start-line="225" selection-start-column="4" selection-end-line="225" selection-end-column="4" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/todolist_3/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todolist_3/routes/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/todolist_3/server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="83" column="5" lean-forward="true" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
+        <state relative-caret-position="-604">
+          <caret line="54" column="7" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="7" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1542342975183" expanded="true" signature="107:1141" ph="..." />
-            <marker date="1542342975183" expanded="true" signature="411:650" ph="..." />
-            <marker date="1542342975183" expanded="true" signature="680:831" ph="..." />
-            <marker date="1542342975183" expanded="true" signature="1163:1616" ph="..." />
-            <marker date="1542342975183" expanded="true" signature="2083:2767" ph="..." />
-            <marker date="1542342975183" expanded="true" signature="2795:3101" ph="..." />
+            <marker date="1542343067557" expanded="true" signature="107:1334" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/python/3.7.1/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="276" column="40" lean-forward="true" selection-start-line="276" selection-start-column="40" selection-end-line="276" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todolist_3/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1542671344655" expanded="true" signature="131:136" ph="..." />
+            <marker date="1542671344655" expanded="true" signature="131:258" ph="..." />
+            <marker date="1542671344655" expanded="true" signature="415:420" ph="..." />
+            <marker date="1542671344655" expanded="true" signature="580:873" ph="..." />
           </folding>
         </state>
       </provider>
