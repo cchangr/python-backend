@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>weibo index</title>
+    </head>
+
+    <body>
+        <a href="/weibo/new">write a new tweet</a>
+
+        {% for w in weibos %}
+        <p>
+            {{ w.content }} from {{ user.username }}
+            <a href="/weibo/delete/id={}">delete </a>
+            <a href="/weibo/edit/id={}">edit</a>
+            {% for c in w.comments() %}
+            <div class="comment">
+                {{ c.user().username : c.content }}
+            </div>
+            {% endfor %}
+            <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="{{ w.id }}">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+        </p>
+        {% endfor %}}
+    </body>
+</html>
