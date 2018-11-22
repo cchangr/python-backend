@@ -17,8 +17,15 @@ def index(request):
     return http_response(body)
 
 
-def new(request):
+def current_user(request):
     pass
+
+
+def new(request):
+    uid = current_user(request)
+    user = User.find(uid)
+    body = template('weibo_new.html')
+    return http_response(body)
 
 
 def edit(request):
