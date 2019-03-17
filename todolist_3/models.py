@@ -197,7 +197,6 @@ class Todo(Model):
         return self.user_id == id
 
 
-#
 class Weibo(Model):
     def __init__(self, form, user_id=-1):
         self.id = form.get('id', None)

@@ -105,10 +105,12 @@ def run(host='', port=3000):
             r = connection.recv(1000)
             r = r.decode('utf-8')
             log('原始请求', r)
-            # log('ip and request, {}\n{}'.format(address, request))
+            log('ip and request, {}\n{}'.format(address, request))
             if len(r.split()) < 2:
                 continue
+
             path = r.split()[1]
+            log('path', path)
             # 设置 request 的 method
             request.method = r.split()[0]
             # 把 body 放入 request 中
@@ -123,6 +125,6 @@ def run(host='', port=3000):
 if __name__ == '__main__':
     config = dict(
         host='',
-        port=3000,
+        port=4000,
     )
     run(**config)

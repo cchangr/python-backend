@@ -32,3 +32,62 @@ Cookie: user=fsbhda9hdi4h88s3
 2018/11/09 11:48:47 cookie ['user=fsbhda9hdi4h88s3']
 2018/11/09 11:48:47 path and query /favicon.ico {}
 2018/11/09 11:48:47 **debug send all
+2018/12/28 16:23:58 start at :5000
+2018/12/28 16:24:15 ip and request: ('127.0.0.1', 60390)
+GET / HTTP/1.1
+Host: localhost:5000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9,zh-TW;q=0.8,zh;q=0.7
+
+
+2018/12/28 16:24:15 cookie ['']
+2018/12/28 16:24:15 path and query / {}
+2018/12/28 16:24:15 **debug send all
+2018/12/28 16:24:15 ip and request: ('127.0.0.1', 60393)
+GET /favicon.ico HTTP/1.1
+Host: localhost:5000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:5000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9,zh-TW;q=0.8,zh;q=0.7
+
+
+2018/12/28 16:24:15 cookie ['']
+2018/12/28 16:24:15 path and query /favicon.ico {}
+2018/12/28 16:24:15 **debug send all
+2018/12/28 16:25:03 ip and request: ('127.0.0.1', 60420)
+GET /add HTTP/1.1
+Host: localhost:5000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9,zh-TW;q=0.8,zh;q=0.7
+
+
+2018/12/28 16:25:03 cookie ['']
+2018/12/28 16:25:03 path and query /add {}
+2018/12/28 16:26:01 start at :5000
+2018/12/28 16:26:04 ip and request: ('127.0.0.1', 60461)
+GET /login HTTP/1.1
+Host: localhost:5000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9,zh-TW;q=0.8,zh;q=0.7
+
+
+2018/12/28 16:26:04 cookie ['']
+2018/12/28 16:26:04 path and query /login {}
+2018/12/28 16:26:04 login, cookies {}
+2018/12/28 16:26:04 **debug send all
